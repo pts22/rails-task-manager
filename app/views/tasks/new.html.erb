@@ -1,0 +1,12 @@
+<h2>New Tasks</h2>
+
+<%= form_for(@tasks) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+
+  <%= f.submit %>
+  <!-- how does it know to link with create?xw -->
+<% end %>
